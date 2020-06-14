@@ -8,6 +8,7 @@ services:
       - app
     ports:
       - 8080:80
+    image: regedarek/railsnginx-web 
   app:
     build:
       context: .
@@ -18,6 +19,7 @@ services:
       - db
     ports:
       - 3000:3000
+    image: regedarek/railsnginx-app
   db:
     image: postgres
     volumes:
