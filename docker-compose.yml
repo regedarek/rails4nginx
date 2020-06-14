@@ -7,8 +7,8 @@ services:
     depends_on:
       - app
     ports:
-      - 8080:80
-    image: regedarek/railsnginx-web 
+      - 80:80
+    image: regedarek/railsnginx-web
   app:
     build:
       context: .
